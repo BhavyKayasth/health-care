@@ -1,0 +1,63 @@
+Your final flow
+┌──────────────────────────────┐
+│       FIRST TIME USER        │
+└──────────────┬───────────────┘
+               ↓
+         HomeScreen opens
+               ↓
+        checkLocation()
+               ↓
+     Permission = denied
+               ↓
+    requestPermission()
+               ↓
+┌──────────────────────────────┐
+│ Android Native Dialog        │
+│                              │
+│ Precise / Approximate        │
+│                              │
+│ While using the app          │
+│ Only this time               │
+│ Don't allow                  │
+└──────────────┬───────────────┘
+               ↓
+          User allows
+               ↓
+        App continues
+
+Then:
+
+┌──────────────────────────────┐
+│       APP IS RUNNING         │
+└──────────────┬───────────────┘
+               ↓
+       User turns Location OFF
+               ↓
+   ServiceStatus.disabled
+               ↓
+    serviceEnabled = false
+               ↓
+        HomeScreen detects
+               ↓
+┌──────────────────────────────┐
+│   Custom Dialog              │
+│                              │
+│   Turn On Location            │
+│                              │
+│   Location service is        │
+│   turned off.                │
+│                              │
+│   [ Exit ]    [ Enable ]     │
+└──────────────┬───────────────┘
+               ↓
+          User taps Enable
+               ↓
+    Android Location Settings
+               ↓
+      User turns Location ON
+               ↓
+      Returns to application
+               ↓
+        checkLocation()
+               ↓
+          App continues

@@ -1,0 +1,43 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "healthcare-ai-collage",
+          "appId": "1:930992490879:android:ecd27d72ed74253e58324a",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "healthcare-ai-collage",
+          "configurations": {
+            "android": "1:930992490879:android:ecd27d72ed74253e58324a",
+            "ios": "1:930992490879:ios:de7d26cad6f1311558324a",
+            "macos": "1:930992490879:ios:de7d26cad6f1311558324a",
+            "web": "1:930992490879:web:b7ac9a560e50f13358324a",
+            "windows": "1:930992490879:web:1e6e2a84a212bfcb58324a"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint",
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    }
+  ]
+}

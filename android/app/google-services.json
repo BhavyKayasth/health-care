@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "930992490879",
+    "project_id": "healthcare-ai-collage",
+    "storage_bucket": "healthcare-ai-collage.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930992490879:android:ecd27d72ed74253e58324a",
+        "android_client_info": {
+          "package_name": "com.example.health_care"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930992490879-c6mf12i3vvd2a5q4iufof8h7ff7dcinf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiAO_c9AuzZhSQR2YfbXC-h19X0gngm7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930992490879-c6mf12i3vvd2a5q4iufof8h7ff7dcinf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "930992490879-q6u9gepln2ifpdrlf9tdn4gs7ulojr47.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.healthCare"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
